@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartRun</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="scripts/navbar_scroll.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Logo i pasek nawigacyjny -->
+    <header id="menu">
+        <nav id="nav">
+            <img src="images/logo.png" class="logo" id="logo" />
+                <ul class="menu">
+                    <li><a href="#menu"><div class="menu_element">MENU</div></a></li>
+                    <li><a href="#offer"><div class="menu_element">OFERTA</div></a></li>
+                    <li><a href="#info"><div class="menu_element">O NAS</div></a></li>
+                    <li><a href="#contact"><div class="menu_element">KONTAKT</div></a></li>
+                </ul>
+        </nav>
+        <!-- Tytuł + przycisk 'Kup pre-order' -->
+        <div class="h_content">
+            <div class="h_content_title_position">
+                <h2 class="h_content_title">Smart Running Shoes</h2>
+            </div>
+            <!-- Slider ze zdjeciami butów -->
+            <div class="h_slider">
+                <h2>SHIFT V1</h2>
+                <div class="s_content">
+                    <button onclick="prev()" class="s_button s_button_l"><img class="s_button_image" src="images/button_slider.png" /></button>
+                    <img class="shoe_image" src="images/shoes/shoe_green.png" />
+                    <button onclick="next()" class="s_button s_button_r"><img class="s_button_image" style="transform: scaleX(-1);" src="images/button_slider.png" /></button>
+                    <!-- Skrypt do zmiany zdjęć na sliderze -->
+                    <script src="scripts/slider.js"></script>
+                </div>
+            </div>
+                <a href="#offer"><div class="preorder_button"><p>KUP PRE-ORDER</p></div></a>
+        </div>
+    </header>
+
+    <!-- Dział z ikonami -->
+    <div class="icons_section">
+        <div class="icons_header">
+            <h2>Innowacyjne & łatwe w obsłudze buty do biegania</h2>
+            <h3>Dostępne już od 1.1.2021 - Zakup pre-order aby zgarnąć pierwsze sztuki <br />i otrzymać darmowe gratisy!</h3>
+        </div>
+        <div class="icons_grid">
+            <!-- Ikona jakość -->
+            <div class="icons_container">
+                <div class="icons_icon">
+                    <img src="images/icons/icon_quality.png" />
+                </div>
+                <div class="icons_title">
+                    <h2>Niezawodna jakość</h2>
+                </div>
+                <div class="icons_description">
+                    <p>
+                        Nasze buty są wykonywane z
+                        najlepszych jakościowo
+                        materiałów. Są wytrzymałe,
+                        odporne na zniszczenia,
+                        wodoodporne ale zarazem
+                        lekkie jak piórko
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ikona innowacja -->
+            <div class="icons_container">
+                <div class="icons_icon">
+                    <img src="images/icons/icon_innovation.png" />
+                </div>
+                <div class="icons_title">
+                    <h2>Innowacyjne rozwiązania</h2>
+                </div>
+                <div class="icons_description">
+                    <p>
+                        Buty pełne są  elektroniki mającej na celu doskonalenie twoich wrażeń podczas biegania.
+                        Nie martw się, wszystko jest starannie ukryte i nie będzie przeszkadzać podczas biegania.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ikona wsparcie -->
+            <div class="icons_container">
+                <div class="icons_icon">
+                    <img class="supp_img" src="images/icons/icon_support.png" />
+                </div>
+                <div class="icons_title">
+                    <h2>Pełne wsparcie</h2>
+                </div>
+                <div class="icons_description">
+                    <p>Oferujemy całodobowe wsparcie dla naszych klientów. Do każdego problemu podchodzimy indywidualnie i staramy się go rozwiązać jak najszybciej.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dział z ofertą -->
+        <div class="offer">
+            <div class="offer_header" id="offer">
+                <h2>Kup pre-order i złap gratisy!</h2>
+            </div>
+
+            <!-- Dział z ikonami -->
+            <div class="offer_grid">
+                <div class="offer_container container_shift">
+                    <!-- Shift v1 -->
+                    <div class="offer_icon">
+                        <img class="offer_shoe" src="images/shoes/shoe_green.png" />
+                    </div>
+                    <div class="offer_title">
+                        <h2>SHIFT V1</h2>
+                    </div>
+                    <div class="offer_description">
+                        <p>
+                            Najnowoczeszniejsze buty na rynku. Możliwość podjłączenia ich do aplikacji na twoim telefonie. Mieżą kroki, spalone kalorie, przebytą trasę, czas oraz wiele więcej.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gopro -->
+                <div class="offer_container container_gopro">
+                    <div class="offer_icon">
+                        <img class="offer_gopro" src="images/offer/offer_gopro.png" />
+                    </div>
+                    <div class="offer_title">
+                        <h2>Gopro hero 4 edition</h2>
+                    </div>
+                    <div class="offer_description">
+                        <p>
+                            Kamera z jakością ULTRA HD w 30 klatkach na sekundę, wodoodporna, wytrzymała. Doskonała na udokumentowanie twoich przygód.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Spotify -->
+                <div class="offer_container container_spotify">
+                    <div class="offer_icon">
+                        <img class="offer_spotify" src="images/offer/offer_spotify.png" />
+                    </div>
+                    <div class="offer_title">
+                        <h2>SPOTIFY PREMIUM NA ROK</h2>
+                    </div>
+                    <div class="offer_description">
+                        <p>
+                            Kto nie lubi słuchać muzyki podczas biegania? Kup pre-order już teraz aby słuchać twojej ulubionej muzyki przez cały rok za darmo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cena oraz przycisk 'Kup teraz' -->
+            <div class="offer_end">
+                <!-- Ceny -->
+                <div class="offer_price">
+                    <div class="offer_old_price">
+                        <p>$1000</p>
+                    </div>
+                    <div class="offer_new_price">
+                        <p>$777</p>
+                    </div>
+                    <div class="offer_price_description">
+                        <p>Limitowana cena <br /> do 7.2.2021</p>
+                    </div>
+                </div>
+                <!-- Przycisk -->
+                <div class="offer_button">
+                    <p>KUP TERAZ</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dział 'o nas' -->
+    <div class="info" id="info">
+        <div class="info_text">
+            <h2>Kim jesteśmy?</h2>
+            <p>
+                Przede wszystkim jesteśmy zapalonymi biegaczami i pasjonatami.
+                Chcemy wprowadzić coś nowego na rynek i zrewolucjonizować to czym nazywamy bieganie.
+                Naszym głównym celem jest zapewnienie tobie wygody i nowych wrażeń.
+            </p>
+        </div>
+        <div class="info_image">
+            <img src="images/team.png" />
+        </div>
+    </div>
+
+    <!-- Dział 'kontakt' -->
+    <div class="contact" id="contact">
+        <div class="contact_header">
+            <!-- Tytuł -->
+            <h2>Masz pytanie? Wal śmiało</h2>
+            <p>Nasz dział pomocy klienta właśnie od tego jest i <br /> służy pomocą z jakim kolwiek pytaniem!</p>
+        </div>
+        <div class="contact_container">
+            <!-- Formy kontaktu -->
+            <div class="contact_info">
+                <div class="contact_info_display">
+                    <p>napisz maila na pomoc@smartrun.pl</p>
+                </div>
+                <div class="contact_info_mid">
+                    <p>lub</p>
+                </div>
+                <div class="contact_info_display">
+                    <p>zadzwoń do nas pod +48 666 1337 69</p>
+                </div>
+            </div>
+            <!-- Zdjecie -->
+            <div class="contact_icon">
+                <img src="images/contact.png" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+       <p>SmartRun ⓒ 2020 | Wszelkie prawa zastrzeżone</p>
+    </footer>
+
+</body>
+
+</html>
